@@ -1,0 +1,80 @@
+.container__your-info {
+  width: 1240px;
+  height: 774px;
+  margin: 120px auto;
+  h2 {
+    font-family: "Exo 2";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 125%;
+    color: #363738;
+  }
+  .your-info-section {
+    width: 1240px;
+    height: 677px;
+    background: #f9f9fb;
+    border-radius: 5px;
+    padding: 48px 110px 48px 56px;
+    h3 {
+      font-family: "Exo 2";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 135%;
+      color: #363738;
+    }
+    p {
+      font-family: "PT Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #363738;
+    }
+    button {
+      width: 248px;
+      height: 50px;
+      background: #0b7572;
+      border-radius: 4px;
+      font-family: "Exo 2";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      color: #ffffff;
+      margin-top: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .container__your-info {
+    width: 100%;
+    .your-info-section {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .container__your-info {
+    width: 100%;
+    .your-info-section {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      .tools{
+        width: 345px;
+        height: 155px;
+      }
+      button{
+        display: none;
+      }
+    }
+  }
+}

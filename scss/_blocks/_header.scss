@@ -1,0 +1,172 @@
+*{
+  box-sizing: border-box;
+}
+.container{
+  width: 1440px;
+  height: 12400px;
+  background: #FFFFFF;
+  margin: 0 auto;
+  .container__header{
+    display: flex;
+    width: 100%;
+    height: 787px;
+    .header__text{
+      width: 60%;
+      height: 100%;
+      h1{
+        font-family: 'Exo 2';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 125%;
+        color: #363738;
+        margin: 190px 131px 40px 100px;
+      }
+      p{
+        
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #6B6B6C;
+        margin: 0 216px 40px 100px;
+      }
+      .header-btn{
+        font-family: 'PT Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #363738;
+        background-color: #fff;
+        border: 0;
+        margin: 0 636px 0 100px;
+      }
+      .header-btn:hover{
+        border-bottom: 5px solid #FFCE50;        
+      }
+    }
+    .header__img{
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 40%;
+      height: 100%;
+      background: #0B7572;
+      img{
+       position: absolute;
+       margin-top: 109px;
+       margin-right: 250px;
+       animation: truck1 1s 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1115px) {
+  .container{
+    width: 100%;
+    .container__header{
+      .header__text{
+        width: 80%;
+        h1{
+        margin:80px 86px 40px 39px;
+        }
+        p{
+          margin: 0 29px 61px 39px;
+        }
+        .header-btn{
+          margin: 0 447px 0 39px;
+        }
+      }
+      .header__img{
+        width: 20%;
+        img{
+          width: 690px;
+          height: 314px;
+          margin-top: 475px;
+          margin-right: 625px;
+       animation: truck1tablet 1s 1;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 430px) {
+     .container{
+      width: 100%;
+      .container__header{
+        display: flex;
+        flex-direction: column;
+        .header__text{
+          width: 100%;
+          height: 100%;
+          background-color: #0B7572;
+          // border-bottom: #0B7572;
+          h1{
+            color:white;
+            margin: 75px 16px 32px 15px;
+            font-family: 'Exo 2';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 125%;
+          }
+          p{
+            color:white;
+            margin: 0 16px 32px 15px;
+          }
+          .header-btn{
+            background-color: #0B7572;
+            color: white;
+            margin: 0 0 0 15px;
+            
+          }
+        }
+        .header__img{
+          width: 100%;
+          height: 0;
+          // border-top: #0B7572;
+          img{
+            width: 370px;
+            height: 253px;
+            margin-top:-380px ;
+            margin-left: 625px;
+            animation: truck1mobil 1s 1;
+          }
+        }
+      }
+     }
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes truck1 {
+  from {left:0px;};
+  to {left:-155px; }
+}
+@keyframes truck1tablet {
+  from {left:0px;};
+  to {left:-570px; }
+}
+@keyframes truck1mobil {
+  from {left:0px;};
+  to {left:-605px; }
+}

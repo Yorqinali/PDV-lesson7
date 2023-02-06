@@ -1,0 +1,135 @@
+.container__why-us {
+  width: 100%;
+  height: 748px;
+  margin-top: 80px;
+  .why-us__section {
+    display: flex;
+    width: 100%;
+    height: 453px;
+    overflow: hidden;
+    .section__text {
+      position: relative;
+      width: 1500px;
+      height: 1500px;
+      margin-left: -595px;
+      background-color: #0b7572;
+      transform: rotate(325deg);
+      z-index: 1;
+      h2 {
+        position: absolute;
+        font-family: "Exo 2";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 125%;
+        color: white;
+        top: 350px;
+        left: 950px;
+        transform: rotate(-325deg);
+      }
+      img {
+        margin-top: 460px;
+        margin-left: 1300px;
+        transform: rotate(37deg);
+      }
+    }
+    .section-img {
+      position: absolute;
+      margin-left: 387px;
+      overflow: hidden;
+    }
+  }
+  .why-us__function {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-left: 164px;
+    padding-right: 278px;
+    margin-top: 72px;
+    img {
+      width: 80px;
+      height: 80px;
+      margin-right: 40px;
+      margin-top: 30px;
+    }
+  }
+  .function-section {
+    display: flex;
+
+    .function-text {
+      h3 {
+        font-family: "Exo 2";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 135%;
+        color: #363738;
+      }
+      p {
+        font-family: "PT Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #6b6b6c;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .container__why-us {
+    width: 100%;
+    margin-top: 380px;
+    // border: 1px solid;
+    .why-us__section {
+      width: 770px;
+      height: 383.5px;
+      background-image: url(../../image/why\ us.png);
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      .section__text {
+        // width: 100%;
+        display: none;
+      }
+      .section-img {
+        // width: 100%;
+        display: none;
+      }
+    }
+    .why-us__function {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding-left: 39px;
+      img {
+        margin-right: 48px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .container__why-us {
+    width: 100%;
+    .why-us__section {
+      display: none;
+      h1 {
+        font-family: "Exo 2";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 125%;
+        color: #363738;
+      }
+    }
+    .why-us__function {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 23px;
+      .function-text {
+        margin-left: 16px;
+      }
+    }
+  }
+}
